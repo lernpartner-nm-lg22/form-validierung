@@ -1,0 +1,64 @@
+.form
+	padding: 10px 20px
+
+	h1
+		font-size: 1.5em
+		text-align: center
+		margin-bottom: 20px
+
+	.form-field
+		margin-bottom: 5px
+
+		label
+			display: block
+			position: relative
+			color: $label-color
+			margin-bottom: 5px
+
+			&.radio-label
+				display: inline
+
+		input
+			border: solid 2px $input-border
+			border-radius: 3px
+			padding: 10px
+			margin-bottom: 5px
+			font-size: 14px
+			display: block
+			width: 100%
+
+		input[type="radio"]
+			display: inline-block
+			width: inherit
+		&:focus
+			outline: none
+
+		&.error
+			input
+				border-color: $error-color
+
+		&.success
+			input
+				border-color: $success-color
+
+		small
+			color: $error-color
+
+/* button */
+.btn
+	width: 100%
+	padding: 3%
+	background: $button-blue
+	border-bottom: 2px solid $button-blue
+	border-top-style: none
+	border-right-style: none
+	border-left-style: none
+	color: $button-text
+	text-transform: uppercase
+
+	&:hover
+		background: $button-hover
+		cursor: pointer
+
+	&:focus
+		outline: none

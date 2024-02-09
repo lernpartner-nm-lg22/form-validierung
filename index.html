@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>JavaScript Form Validation Demo</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	<script type="module" src="./scripts/form.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<form id="signup" class="form" method="post" action="./avatar.php">
+			<h1>Registrieren</h1>
+			<div class="form-field">
+				<label for="username">Benutzername:</label>
+				<input type="text" name="username" id="username" autocomplete="off" placeholder="Wähle eine Benutzername">
+				<small></small>
+			</div>
+
+			<div class="form-field">
+				<label for="Email">EMail:</label>
+				<input type="text" name="email" id="email" autocomplete="off" placeholder="Deine E-Mailadresse">
+				<small></small>
+			</div>
+
+			<div class="form-field">
+				<label for="password">Kennwort:</label>
+				<input type="password" name="password" id="password" autocomplete="off" placeholder="Kennwort">
+				<small></small>
+			</div>
+
+			<div class="form-field">
+				<label for="password">Kennwort bestätigen:</label>
+				<input type="password" name="confirm-password" id="confirm-password" onpaste="return false" autocomplete="off"
+					placeholder="Kennwort">
+				<small></small>
+			</div>
+
+			<div class="form-field">
+				<input type="submit" value="Anmelden" class="btn">
+			</div>
+		</form>
+	</div>
+
+
+</body>
+
+</html>
